@@ -13,7 +13,7 @@ def basedOnDays(df):
     data = df[(df['workingday'] == 1) & (df['casual'] > 0)]
     return data
 
-all_df = pd.read_csv("main_data.csv")
+all_df = pd.read_csv("https://raw.githubusercontent.com/RevaRayhan/bangkit-DataAnalysis/main/dashboard/main_data.csv")
 datetime_column = ["dteday"]
 all_df.sort_values(by="dteday", inplace=True)
 all_df.reset_index(inplace=True)
